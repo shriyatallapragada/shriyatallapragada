@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shriya Tallapragada · Portfolio</title>
+<meta name="description" content="Shriya Tallapragada, a computer science undergraduate building AI, NLP and full-stack systems.">
+<meta name="theme-color" content="#f3ebdd">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="top">
+  <a class="brand" href="#top" aria-label="Shriya Tallapragada, home">
+    <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><use href="#leaf-mark"/></svg>
+    <span>Shriya T.</span>
+  </a>
+  <nav aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#growing">Growing</a>
+    <a class="btn btn-small" href="#contact">Say hello</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">Computer Science Undergraduate · Hyderabad</p>
+    <h1>Growing practical <em>AI</em> from the ground up.</h1>
+    <p class="lede">I'm Shriya. I build end-to-end systems that pair machine learning with real-world software: LLM-powered tools, semantic search pipelines, browser extensions and database-driven platforms.</p>
+    <div class="cta">
+      <a class="btn" href="#work">See my work</a>
+      <a class="btn btn-ghost" href="https://github.com/shriyatallapragada" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+
+  <div class="hero-art" aria-hidden="true">
+    <svg viewBox="0 0 560 520" role="img" focusable="false">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#f1d9b0"/><stop offset="1" stop-color="#f3ebdd"/>
+        </linearGradient>
+        <clipPath id="arch"><path d="M40 520V230C40 110 150 30 280 30s240 80 240 200v290z"/></clipPath>
+      </defs>
+      <g clip-path="url(#arch)">
+        <rect width="560" height="520" fill="url(#sky)"/>
+        <circle class="sun" cx="370" cy="170" r="62" fill="#c9793f"/>
+        <circle cx="370" cy="170" r="86" fill="#c9793f" opacity=".16"/>
+        <path d="M-10 330C80 270 150 290 230 320s170-10 340-70v300H-10z" fill="#a3ae8b"/>
+        <path d="M-10 380C90 330 190 360 280 385s190-30 290-60v230H-10z" fill="#7b8a55"/>
+        <path d="M-10 440C100 405 200 430 300 448s190-20 270-45v140H-10z" fill="#5e6b3e"/>
+        <path d="M-10 490C120 465 220 485 320 495s170-10 250-25v70H-10z" fill="#3e2f23"/>
+        <g class="birds" fill="none" stroke="#3e2f23" stroke-width="2.5" stroke-linecap="round">
+          <path d="M150 120q12-14 24 0q12-14 24 0"/><path d="M215 88q9-10 18 0q9-10 18 0"/>
+        </g>
+        <!-- trees -->
+        <g>
+          <rect x="116" y="352" width="7" height="60" fill="#3e2f23"/>
+          <circle cx="119" cy="340" r="30" fill="#4a5733"/><circle cx="102" cy="358" r="20" fill="#5e6b3e"/><circle cx="138" cy="356" r="22" fill="#5e6b3e"/>
+          <rect x="446" y="372" width="6" height="46" fill="#3e2f23"/>
+          <circle cx="449" cy="362" r="22" fill="#4a5733"/><circle cx="436" cy="376" r="15" fill="#5e6b3e"/><circle cx="462" cy="374" r="16" fill="#5e6b3e"/>
+        </g>
+        <!-- sprout -->
+        <g transform="translate(280 470)">
+          <path d="M0 0C0-40 2-70 0-104" fill="none" stroke="#e9dcc3" stroke-width="5" stroke-linecap="round"/>
+          <path class="sway" d="M0-60C-50-62-66-96-62-130 -26-128 0-104 0-60z" fill="#a3ae8b"/>
+          <path class="sway" d="M0-84C46-88 66-120 60-152 24-148 -2-124 0-84z" fill="#c8cfa8"/>
+          <path d="M0-60C-20-78-40-98-60-126" fill="none" stroke="#5e6b3e" stroke-width="2" opacity=".6"/>
+        </g>
+      </g>
+      <path d="M40 520V230C40 110 150 30 280 30s240 80 240 200v290" fill="none" stroke="#3e2f23" stroke-width="3"/>
+      <!-- floating tags -->
+      <g font-family="Inter, sans-serif" font-size="13" font-weight="600">
+        <g transform="translate(6 120) rotate(-6)"><rect width="104" height="32" rx="16" fill="#c9793f"/><text x="52" y="21" text-anchor="middle" fill="#f3ebdd">NLP</text></g>
+        <g transform="translate(450 270) rotate(5)"><rect width="104" height="32" rx="16" fill="#5e6b3e"/><text x="52" y="21" text-anchor="middle" fill="#f3ebdd">LLMs</text></g>
+        <g transform="translate(10 330) rotate(4)"><rect width="124" height="32" rx="16" fill="#3e2f23"/><text x="62" y="21" text-anchor="middle" fill="#f3ebdd">Full-stack</text></g>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40C240 90 480 0 720 40s480 50 720 0V80H0z" fill="#e9dcc3"/></svg>
+
+<!-- ABOUT -->
+<section id="about" class="band band-sand">
+  <div class="wrap about">
+    <div class="about-art" aria-hidden="true">
+      <svg viewBox="0 0 320 320" focusable="false">
+        <circle cx="160" cy="160" r="150" fill="#d9c6a3"/>
+        <circle cx="160" cy="160" r="118" fill="none" stroke="#b5603a" stroke-width="2" stroke-dasharray="3 9" stroke-linecap="round"/>
+        <circle cx="160" cy="160" r="86" fill="#f3ebdd"/>
+        <text x="160" y="150" text-anchor="middle" font-family="Fraunces, serif" font-size="64" font-weight="700" fill="#3e2f23">ST</text>
+        <text x="160" y="184" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" letter-spacing="3" fill="#b5603a">CSE · JNTUH</text>
+        <g fill="#7b8a55">
+          <g transform="translate(58 70) rotate(-40)"><path d="M0 40C0 20 0 0 0-30" fill="none" stroke="#5e6b3e" stroke-width="3" stroke-linecap="round"/><ellipse cx="-11" cy="-4" rx="12" ry="5.5" transform="rotate(-35 -11 -4)"/><ellipse cx="11" cy="-18" rx="12" ry="5.5" transform="rotate(35 11 -18)"/><ellipse cx="-10" cy="-30" rx="10" ry="5" transform="rotate(-35 -10 -30)"/></g>
+          <g transform="translate(262 250) rotate(140)"><path d="M0 40C0 20 0 0 0-30" fill="none" stroke="#5e6b3e" stroke-width="3" stroke-linecap="round"/><ellipse cx="-11" cy="-4" rx="12" ry="5.5" transform="rotate(-35 -11 -4)"/><ellipse cx="11" cy="-18" rx="12" ry="5.5" transform="rotate(35 11 -18)"/><ellipse cx="-10" cy="-30" rx="10" ry="5" transform="rotate(-35 -10 -30)"/></g>
+        </g>
+      </svg>
+    </div>
+    <div>
+      <p class="eyebrow">About</p>
+      <h2>From model experiments to deployed products.</h2>
+      <p>I'm a third-year Computer Science and Engineering student at <strong>JNTUH University College of Engineering, Science and Technology, Hyderabad</strong>.</p>
+      <p>My interests sit at the meeting point of <strong>Artificial Intelligence, Machine Learning, NLP and Full Stack Development</strong>. I like designing software that couples modern AI techniques with dependable backend systems, and carrying a project from experimentation all the way to deployment.</p>
+      <ul class="facts">
+        <li><b>3rd</b><span>year B.Tech CSE</span></li>
+        <li><b>5</b><span>featured projects</span></li>
+        <li><b>AI · NLP</b><span>primary focus</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work" class="wrap section">
+  <p class="eyebrow">Selected work</p>
+  <h2>Things I've planted</h2>
+  <p class="section-lede">Each project below links to its repository. Where a project was a team effort, I've listed what I personally built.</p>
+
+  <div class="grid">
+
+    <article class="card feature reveal">
+      <div class="card-art art-clay" aria-hidden="true">
+        <svg viewBox="0 0 400 220" focusable="false">
+          <g fill="#f3ebdd"><rect x="40" y="40" width="96" height="140" rx="8"/><rect x="152" y="40" width="96" height="140" rx="8"/><rect x="264" y="40" width="96" height="140" rx="8"/></g>
+          <g fill="#b5603a"><rect x="52" y="54" width="72" height="10" rx="3"/><rect x="164" y="54" width="72" height="10" rx="3" fill="#a3ae8b"/><rect x="276" y="54" width="72" height="10" rx="3" fill="#3e2f23"/></g>
+          <g fill="#d9c6a3"><rect x="52" y="76" width="72" height="6" rx="3"/><rect x="52" y="90" width="60" height="6" rx="3"/><rect x="52" y="104" width="68" height="6" rx="3"/><rect x="164" y="76" width="72" height="6" rx="3"/><rect x="164" y="90" width="56" height="6" rx="3"/><rect x="164" y="104" width="66" height="6" rx="3"/><rect x="276" y="76" width="72" height="6" rx="3"/><rect x="276" y="90" width="64" height="6" rx="3"/><rect x="276" y="104" width="52" height="6" rx="3"/></g>
+          <path d="M70 160h260" stroke="#3e2f23" stroke-width="3" stroke-linecap="round"/>
+          <path d="M200 140v20" stroke="#3e2f23" stroke-width="3"/>
+          <circle cx="248" cy="160" r="9" fill="#c9793f" stroke="#3e2f23" stroke-width="3"/>
+        </svg>
+      </div>
+      <div class="card-body">
+        <h3>Indian News Comparator</h3>
+        <p>Chrome extension that scores political bias in Indian news with a custom <b>IndicBERT + Liquid Neural Network</b> pipeline, then retrieves alternative perspectives through semantic search and explains framing with Groq LLMs.</p>
+        <details><summary>What I built</summary><ul>
+          <li>Designed and trained the bias-classification pipeline</li>
+          <li>Built the FastAPI backend and API architecture</li>
+          <li>Wrote the complete ML training pipeline</li>
+          <li>Implemented ChromaDB retrieval with topic-anchor filtering</li>
+          <li>Integrated Groq for explainable bias analysis</li>
+          <li>Containerised and deployed with Docker</li>
+        </ul></details>
+        <ul class="tags"><li>Python</li><li>FastAPI</li><li>PyTorch</li><li>IndicBERT</li><li>ChromaDB</li><li>Groq</li><li>Docker</li></ul>
+        <a class="link" href="https://github.com/shriyatallapragada/indian-news-comparator" rel="noopener">View repository →</a>
+      </div>
+    </article>
+
+    <article class="card feature reveal">
+      <div class="card-art art-moss" aria-hidden="true">
+        <svg viewBox="0 0 400 220" focusable="false">
+          <path d="M-10 190C80 150 120 175 200 140s130-20 210-70v170H-10z" fill="#4a5733"/>
+          <path d="M30 190C110 170 120 120 200 118s100-40 170-72" fill="none" stroke="#f3ebdd" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round"/>
+          <g stroke="#3e2f23" stroke-width="3"><circle cx="60" cy="186" r="11" fill="#d9c6a3"/><circle cx="140" cy="140" r="11" fill="#d9c6a3"/><circle cx="230" cy="118" r="11" fill="#d9c6a3"/><circle cx="310" cy="78" r="11" fill="#c9793f"/></g>
+          <path d="M310 66V36" stroke="#f3ebdd" stroke-width="3"/><path d="M310 36l34 10-34 12z" fill="#c9793f"/>
+          <g fill="#f3ebdd" font-family="Inter, sans-serif" font-size="11" font-weight="600" text-anchor="middle"><text x="60" y="212">Resume</text><text x="140" y="166">Gaps</text><text x="230" y="144">Path</text></g>
+        </svg>
+      </div>
+      <div class="card-body">
+        <h3>NeuralPath <span class="badge">Team project</span></h3>
+        <p>An onboarding engine that compares a trainee's resume to a job description and generates a personalised day-by-day learning path with Llama 3.2 running locally through Ollama.</p>
+        <details><summary>What I built</summary><ul>
+          <li>The complete FastAPI backend</li>
+          <li>AI pipeline for resume parsing and skill-gap analysis</li>
+          <li>Local Llama 3.2 integration through Ollama</li>
+          <li>Adaptive learning-path generation algorithm</li>
+          <li>PDF parsing and O*NET skill standardisation</li>
+        </ul></details>
+        <ul class="tags"><li>Python</li><li>FastAPI</li><li>LangChain</li><li>Ollama</li><li>Next.js</li></ul>
+        <a class="link" href="https://github.com/jahnavi-yenumula/AI--Onboarding-Engine-" rel="noopener">View repository →</a>
+      </div>
+    </article>
+
+    <article class="card feature reveal">
+      <div class="card-art art-sand" aria-hidden="true">
+        <svg viewBox="0 0 400 220" focusable="false">
+          <rect x="60" y="34" width="280" height="160" rx="12" fill="#f3ebdd" stroke="#3e2f23" stroke-width="3"/>
+          <path d="M60 62h280" stroke="#3e2f23" stroke-width="3"/>
+          <g fill="#c9793f"><circle cx="80" cy="48" r="5"/></g><g fill="#a3ae8b"><circle cx="96" cy="48" r="5"/></g><g fill="#5e6b3e"><circle cx="112" cy="48" r="5"/></g>
+          <rect x="82" y="84" width="96" height="14" rx="4" fill="#b5603a"/><rect x="82" y="108" width="136" height="14" rx="4" fill="#a3ae8b"/><rect x="82" y="132" width="76" height="14" rx="4" fill="#3e2f23"/>
+          <text x="276" y="120" text-anchor="middle" font-family="Fraunces, serif" font-size="30" font-weight="700" letter-spacing="4" fill="#3e2f23">L C R</text>
+          <path d="M240 134h72" stroke="#b5603a" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="card-body">
+        <h3>Media Bias Extension <span class="badge">Team project</span></h3>
+        <p>Chrome extension that shows the same news event from Left, Center and Right outlets using semantic search, with NewsAPI and Guardian fallbacks when the vector store has no match.</p>
+        <details><summary>What I built</summary><ul>
+          <li>Backend architecture</li>
+          <li>Groq-powered political bias detection</li>
+          <li>ChromaDB semantic retrieval workflow</li>
+          <li>NewsAPI and Guardian API fallbacks</li>
+          <li>Article comparison workflow</li>
+        </ul></details>
+        <ul class="tags"><li>Python</li><li>FastAPI</li><li>Flask</li><li>Groq</li><li>ChromaDB</li></ul>
+        <a class="link" href="https://github.com/sai-ritvik/media-bias-extension" rel="noopener">View repository →</a>
+      </div>
+    </article>
+
+    <article class="card feature reveal">
+      <div class="card-art art-clay" aria-hidden="true">
+        <svg viewBox="0 0 400 220" focusable="false">
+          <path d="M50 180V40M50 180h310" stroke="#f3ebdd" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <g fill="#f3ebdd"><circle cx="90" cy="150" r="6"/><circle cx="130" cy="138" r="6"/><circle cx="160" cy="146" r="6"/><circle cx="200" cy="110" r="6"/><circle cx="240" cy="102" r="6"/><circle cx="270" cy="84" r="6"/><circle cx="310" cy="72" r="6"/></g>
+          <path d="M70 160L340 62" stroke="#3e2f23" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="340" cy="62" r="9" fill="#d9c6a3" stroke="#3e2f23" stroke-width="3"/>
+          <text x="66" y="60" font-family="Fraunces, serif" font-size="20" font-style="italic" fill="#f3ebdd">y = mx + b</text>
+        </svg>
+      </div>
+      <div class="card-body">
+        <h3>Linear Regression From Scratch</h3>
+        <p>An object-oriented regression engine built from first principles, with no ML libraries. It predicts startup revenue from marketing spend and reports Mean Squared Error.</p>
+        <details><summary>What I built</summary><ul>
+          <li>Variance and covariance calculations from scratch</li>
+          <li>A <code>LinearRegression</code> class with <code>fit</code>, <code>predict</code> and MSE</li>
+          <li>Forecast visualisation with Matplotlib</li>
+        </ul></details>
+        <ul class="tags"><li>Python</li><li>Matplotlib</li></ul>
+        <a class="link" href="https://github.com/shriyatallapragada/linear-regression-from-scratch" rel="noopener">View repository →</a>
+      </div>
+    </article>
+
+    <article class="card feature reveal">
+      <div class="card-art art-moss" aria-hidden="true">
+        <svg viewBox="0 0 400 220" focusable="false">
+          <path d="M150 210L185 20M250 210L215 20" stroke="#f3ebdd" stroke-width="4" fill="none"/>
+          <g stroke="#d9c6a3" stroke-width="7" stroke-linecap="round"><path d="M138 190h124"/><path d="M146 150h108"/><path d="M155 112h90"/><path d="M164 78h72"/><path d="M174 48h52"/></g>
+          <path d="M200 20v190" stroke="#c9793f" stroke-width="3" stroke-dasharray="6 8"/>
+          <rect x="296" y="40" width="64" height="40" rx="6" fill="#f3ebdd" stroke="#3e2f23" stroke-width="3"/>
+          <text x="328" y="66" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#3e2f23">WL 3</text>
+          <rect x="44" y="140" width="64" height="40" rx="6" fill="#f3ebdd" stroke="#3e2f23" stroke-width="3"/>
+          <text x="76" y="166" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#3e2f23">CNF</text>
+        </svg>
+      </div>
+      <div class="card-body">
+        <h3>Railway Reservation System <span class="badge">Team project</span></h3>
+        <p>An enterprise-style reservation platform covering authentication, bookings, payments, seat allocation and waitlist management.</p>
+        <details><summary>What I built</summary><ul>
+          <li>Designed and implemented the Oracle SQL schema</li>
+          <li>Tables, constraints and relationships</li>
+          <li>Database normalisation</li>
+          <li>Assisted with backend database integration</li>
+        </ul></details>
+        <ul class="tags"><li>Oracle SQL</li><li>React</li><li>Node.js</li><li>Express</li></ul>
+      </div>
+    </article>
+
+  </div>
+
+  <h3 class="sub">More builds</h3>
+  <div class="grid grid-small">
+
+    <article class="card mini reveal">
+      <div class="card-art art-sand" aria-hidden="true">
+        <svg viewBox="0 0 400 220" focusable="false">
+          <rect x="40" y="70" width="90" height="100" rx="8" fill="#b5603a"/><rect x="270" y="70" width="90" height="100" rx="8" fill="#5e6b3e"/>
+          <path d="M130 150C130 60 270 60 270 150" fill="none" stroke="#3e2f23" stroke-width="8" stroke-linecap="round"/>
+          <path d="M150 150V120M175 150V92M200 150V82M225 150V92M250 150V120" stroke="#3e2f23" stroke-width="4"/>
+          <path d="M20 170h360" stroke="#3e2f23" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="card-body">
+        <h3>ContextBridge</h3>
+        <p>Local-first CLI (<code>cb</code>) and desktop app that records decisions, commits and test runs, compresses them into a short handoff and writes it where the next AI coding agent will read it.</p>
+        <ul class="tags"><li>Python</li><li>Typer</li><li>SQLite</li></ul>
+        <a class="link" href="https://github.com/shriyatallapragada/ContextBridge" rel="noopener">Repository →</a>
+      </div>
+    </article>
+
+    <article class="card mini reveal">
+      <div class="card-art art-clay" aria-hidden="true">
+        <svg viewBox="0 0 400 220" focusable="false">
+          <rect x="70" y="36" width="260" height="38" rx="8" fill="#f3ebdd"/><rect x="70" y="86" width="124" height="98" rx="8" fill="#d9c6a3"/><rect x="206" y="86" width="124" height="46" rx="8" fill="#a3ae8b"/><rect x="206" y="138" width="124" height="46" rx="8" fill="#3e2f23"/>
+          <g fill="#b5603a"><rect x="84" y="50" width="90" height="10" rx="3"/><rect x="84" y="104" width="60" height="8" rx="3" fill="#3e2f23"/></g>
+          <path d="M84 134l8 8 14-16" fill="none" stroke="#5e6b3e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="card-body">
+        <h3>NotionMake</h3>
+        <p>Cross-platform Flutter app to build Notion pages and databases visually, then publish them with one click. Includes starter templates, a live preview and a free local AI assistant.</p>
+        <ul class="tags"><li>Flutter</li><li>Dart</li><li>Notion API</li></ul>
+        <a class="link" href="https://github.com/shriyatallapragada/NotionMake" rel="noopener">Repository →</a>
+      </div>
+    </article>
+
+    <article class="card mini reveal">
+      <div class="card-art art-moss" aria-hidden="true">
+        <svg viewBox="0 0 400 220" focusable="false">
+          <circle cx="200" cy="112" r="84" fill="none" stroke="#f3ebdd" stroke-width="3"/><circle cx="200" cy="112" r="54" fill="none" stroke="#f3ebdd" stroke-width="2" opacity=".6"/><circle cx="200" cy="112" r="24" fill="none" stroke="#f3ebdd" stroke-width="2" opacity=".6"/>
+          <path d="M200 112L268 66" stroke="#d9c6a3" stroke-width="4" stroke-linecap="round"/>
+          <path d="M200 112L268 66A84 84 0 0 0 200 28z" fill="#d9c6a3" opacity=".25"/>
+          <circle cx="248" cy="82" r="8" fill="#c9793f" stroke="#3e2f23" stroke-width="3"/><circle cx="150" cy="146" r="6" fill="#f3ebdd"/><circle cx="178" cy="62" r="6" fill="#f3ebdd"/>
+        </svg>
+      </div>
+      <div class="card-body">
+        <h3>SprintMind</h3>
+        <p>Delivery intelligence layered on Jira, GitHub and meetings. It uses Hindsight memory to flag at-risk commitments, with evidence-backed explanations from deterministic rules.</p>
+        <ul class="tags"><li>Python</li><li>LLMs</li><li>Hindsight</li><li>Webhooks</li></ul>
+        <a class="link" href="https://github.com/shriyatallapragada/sprintmind" rel="noopener">Repository →</a>
+      </div>
+    </article>
+
+    <article class="card mini reveal">
+      <div class="card-art art-sand" aria-hidden="true">
+        <svg viewBox="0 0 400 220" focusable="false">
+          <g fill="#f3ebdd" stroke="#3e2f23" stroke-width="3"><rect x="40" y="36" width="320" height="148" rx="10"/></g>
+          <g><rect x="60" y="60" width="120" height="16" rx="5" fill="#b5603a"/><rect x="120" y="88" width="150" height="16" rx="5" fill="#5e6b3e"/><rect x="90" y="116" width="100" height="16" rx="5" fill="#c9793f"/><rect x="210" y="144" width="120" height="16" rx="5" fill="#3e2f23"/></g>
+          <path d="M60 172h280" stroke="#d9c6a3" stroke-width="2" stroke-dasharray="4 6"/>
+        </svg>
+      </div>
+      <div class="card-body">
+        <h3>AI BOS</h3>
+        <p>Clickable prototype of a retail Business Operations System: a visual promotion planning canvas where an AI copilot proposes edits that are checked and simulated before a human accepts them.</p>
+        <ul class="tags"><li>JavaScript</li><li>Monte Carlo</li><li>Hackathon</li></ul>
+        <a class="link" href="https://github.com/shriyatallapragada/ai_bos" rel="noopener">Repository →</a>
+      </div>
+    </article>
+
+    <article class="card mini reveal">
+      <div class="card-art art-clay" aria-hidden="true">
+        <svg viewBox="0 0 400 220" focusable="false">
+          <path d="M60 180h280M80 180V96h240v84" fill="#f3ebdd" stroke="#3e2f23" stroke-width="3"/>
+          <path d="M60 96L200 36l140 60z" fill="#3e2f23"/>
+          <g fill="#d9c6a3" stroke="#3e2f23" stroke-width="3"><rect x="104" y="112" width="18" height="68"/><rect x="146" y="112" width="18" height="68"/><rect x="236" y="112" width="18" height="68"/><rect x="278" y="112" width="18" height="68"/></g>
+          <rect x="182" y="132" width="36" height="48" rx="18 18 0 0" fill="#b5603a"/>
+          <circle cx="200" cy="72" r="9" fill="#c9793f"/>
+        </svg>
+      </div>
+      <div class="card-body">
+        <h3>College Hub</h3>
+        <p>AI-powered campus management platform that gathers academics, placements, anonymous Q&amp;A, events and search in one place so institutional knowledge doesn't vanish when a batch graduates.</p>
+        <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>Prisma</li><li>PostgreSQL</li></ul>
+        <a class="link" href="https://github.com/shriyatallapragada/AI-powered-Campus_Management_System" rel="noopener">Repository →</a>
+      </div>
+    </article>
+
+    <article class="card mini reveal">
+      <div class="card-art art-moss" aria-hidden="true">
+        <svg viewBox="0 0 400 220" focusable="false">
+          <rect x="52" y="44" width="136" height="100" rx="8" fill="#f3ebdd"/><path d="M52 66h136" stroke="#3e2f23" stroke-width="3"/>
+          <text x="66" y="104" font-family="monospace" font-size="18" font-weight="700" fill="#5e6b3e">&gt;_ chat</text>
+          <rect x="212" y="44" width="136" height="100" rx="8" fill="#d9c6a3"/><rect x="236" y="70" width="88" height="16" rx="8" fill="#3e2f23"/><rect x="236" y="98" width="60" height="16" rx="8" fill="#b5603a"/>
+          <rect x="172" y="156" width="56" height="30" rx="15" fill="#f3ebdd"/><circle cx="200" cy="171" r="8" fill="#c9793f"/>
+        </svg>
+      </div>
+      <div class="card-body">
+        <h3>Python Applications</h3>
+        <p>A password generator, a socket-based chat app with authentication, and a Groq-powered voice assistant, built during the Oasis Infobyte Python internship.</p>
+        <ul class="tags"><li>Tkinter</li><li>Sockets</li><li>SQLite</li><li>Groq</li></ul>
+        <a class="link" href="https://github.com/shriyatallapragada/python-projects" rel="noopener">Repository →</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<svg class="wave flip" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40C240 90 480 0 720 40s480 50 720 0V80H0z" fill="#5e6b3e"/></svg>
+
+<!-- SKILLS -->
+<section id="skills" class="band band-moss">
+  <div class="wrap">
+    <p class="eyebrow light">Toolbox</p>
+    <h2>What I grow with</h2>
+    <div class="skills">
+      <div class="skill reveal">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><use href="#ico-code"/></svg>
+        <h3>Languages</h3>
+        <ul><li>Python</li><li>Java</li><li>C</li><li>JavaScript</li><li>SQL</li></ul>
+      </div>
+      <div class="skill reveal">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><use href="#ico-stack"/></svg>
+        <h3>Frameworks &amp; tools</h3>
+        <ul><li>FastAPI</li><li>React</li><li>Next.js</li><li>Node.js</li><li>Express</li><li>Docker</li><li>Git</li></ul>
+      </div>
+      <div class="skill reveal">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><use href="#ico-brain"/></svg>
+        <h3>AI &amp; machine learning</h3>
+        <ul><li>PyTorch</li><li>Hugging Face</li><li>LangChain</li><li>Groq</li><li>ChromaDB</li><li>Oracle</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" style="background:#5e6b3e"><path d="M0 40C240 90 480 0 720 40s480 50 720 0V80H0z" fill="#f3ebdd"/></svg>
+
+<!-- GROWING -->
+<section id="growing" class="wrap section">
+  <div class="growing">
+    <div>
+      <p class="eyebrow">Currently exploring</p>
+      <h2>Next seasons</h2>
+      <ul class="chips">
+        <li>Retrieval-Augmented Generation</li><li>Agentic AI systems</li><li>Transformer architectures</li><li>MLOps</li><li>Distributed backend systems</li><li>Scalable AI deployment</li>
+      </ul>
+    </div>
+    <aside class="focus">
+      <h3>Current focus</h3>
+      <ul>
+        <li><b>Campus Loop</b>: an AI-powered academic collaboration platform</li>
+        <li>Practical applications powered by LLMs</li>
+        <li>Strengthening ML engineering and backend skills</li>
+        <li>Preparing for Software Engineering and AI internships</li>
+      </ul>
+      <svg class="sprout-art" viewBox="0 0 120 90" aria-hidden="true"><use href="#sprout"/></svg>
+    </aside>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <p class="eyebrow light">Contact</p>
+    <h2>Let's build something that lasts.</h2>
+    <p>I'm looking for Software Engineering and AI internship opportunities. The best way to reach me is email or LinkedIn.</p>
+    <div class="cta center">
+      <a class="btn btn-light" href="mailto:shriyatallapragada@gmail.com">shriyatallapragada@gmail.com</a>
+      <a class="btn btn-outline" href="https://www.linkedin.com/in/shriya-tallapragada-0b9356380" rel="noopener">LinkedIn ↗</a>
+      <a class="btn btn-outline" href="https://github.com/shriyatallapragada" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+  <svg class="ground" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 60C200 10 420 100 720 60s520-50 720 0v60H0z" fill="#4a3a2b"/>
+    <path d="M0 90C240 50 480 120 760 90s460-40 680 0v30H0z" fill="#3e2f23"/>
+  </svg>
+</section>
+</main>
+
+<footer>
+  <p>© <span id="year">2026</span> Shriya Tallapragada · Hand-built with plain HTML, CSS and a little JavaScript.</p>
+</footer>
+
+<!-- shared graphics -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="leaf-mark" viewBox="0 0 32 32">
+      <circle cx="16" cy="16" r="15" fill="#5e6b3e"/>
+      <path d="M9 23C8 13 15 8 24 8c0 9-5 15-15 15z" fill="#f3ebdd"/>
+      <path d="M9 23C13 18 17 14 22 11" fill="none" stroke="#5e6b3e" stroke-width="1.6" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="sprig" viewBox="-30 -50 60 100" overflow="visible">
+      <path d="M0 40C0 10 0-10 0-40" fill="none" stroke="#5e6b3e" stroke-width="2.5" stroke-linecap="round"/>
+      <g fill="#7b8a55"><ellipse cx="-11" cy="-4" rx="11" ry="5" transform="rotate(-35 -11 -4)"/><ellipse cx="11" cy="-20" rx="11" ry="5" transform="rotate(35 11 -20)"/><ellipse cx="-11" cy="-34" rx="10" ry="5" transform="rotate(-35 -11 -34)"/><ellipse cx="10" cy="10" rx="11" ry="5" transform="rotate(35 10 10)"/></g>
+    </symbol>
+    <symbol id="sprout" viewBox="0 0 120 90">
+      <path d="M0 88h120" stroke="#3e2f23" stroke-width="3" stroke-linecap="round"/>
+      <path d="M60 88C60 66 60 52 60 36" fill="none" stroke="#5e6b3e" stroke-width="3" stroke-linecap="round"/>
+      <path d="M60 52C34 52 24 36 26 18c20 0 34 12 34 34z" fill="#a3ae8b"/><path d="M60 40C80 40 92 28 90 10 70 10 58 22 60 40z" fill="#7b8a55"/>
+    </symbol>
+    <symbol id="ico-code" viewBox="0 0 48 48"><g fill="none" stroke="#f3ebdd" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M17 14L7 24l10 10M31 14l10 10-10 10M27 10l-6 28"/></g></symbol>
+    <symbol id="ico-stack" viewBox="0 0 48 48"><g fill="none" stroke="#f3ebdd" stroke-width="3" stroke-linejoin="round"><path d="M24 7l17 9-17 9-17-9z"/><path d="M7 24l17 9 17-9M7 32l17 9 17-9"/></g></symbol>
+    <symbol id="ico-brain" viewBox="0 0 48 48"><g fill="none" stroke="#f3ebdd" stroke-width="3" stroke-linecap="round"><circle cx="24" cy="24" r="5"/><circle cx="9" cy="12" r="3.5"/><circle cx="39" cy="12" r="3.5"/><circle cx="9" cy="36" r="3.5"/><circle cx="39" cy="36" r="3.5"/><path d="M12 14l8 7M36 14l-8 7M12 34l8-7M36 34l-8-7"/></g></symbol>
+  </defs>
+</svg>
+
+<script src="script.js"></script>
+</body>
+</html>

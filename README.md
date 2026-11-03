@@ -29,6 +29,8 @@ My primary interests lie in **Artificial Intelligence**, **Machine Learning**, *
 
 Most of my work focuses on building practical AI applications, including LLM-powered systems, semantic search pipelines, browser extensions, and database-driven web platforms that solve real-world problems.
 
+I also serve as **Design Head at E-Cell, JNTUH**, leading visual identity and campaigns for campus startup events.
+
 ---
 
 # 🚀 Featured Projects

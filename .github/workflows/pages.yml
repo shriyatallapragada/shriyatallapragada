@@ -25,7 +25,7 @@ jobs:
       - name: Stage site files
         run: |
           mkdir _site
-          cp -r index.html styles.css script.js assets _site/
+          cp -r index.html styles.css script.js assets dp.jpeg _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

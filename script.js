@@ -1,8 +1,5 @@
 document.documentElement.classList.add("js");
 
-const year = document.getElementById("year");
-if (year) year.textContent = new Date().getFullYear();
-
 const items = document.querySelectorAll(".reveal");
 if ("IntersectionObserver" in window) {
   const io = new IntersectionObserver((entries) => {

@@ -177,20 +177,10 @@ Enterprise-style railway reservation platform supporting authentication, booking
 
 ---
 
-# 📊 GitHub Statistics
+# 📈 GitHub Contributions
 
 <p align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=shriyatallapragada&show_icons=true&theme=github_dark&hide_border=true"/>
-
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shriyatallapragada&layout=compact&theme=github_dark&hide_border=true"/>
-
-</p>
-
-<p align="center">
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=shriyatallapragada&theme=github-dark-blue&hide_border=true"/>
-
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=shriyatallapragada&theme=github-compact&hide_border=true" alt="Shriya Tallapragada's GitHub contribution graph"/>
 </p>
 
 ---

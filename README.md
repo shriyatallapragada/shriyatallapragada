@@ -15,6 +15,10 @@ Focused on Artificial Intelligence, Natural Language Processing, and Full Stack 
 Building end-to-end software systems that combine machine learning with practical applications.
 </p>
 
+<p align="center">
+🌐 <strong>Portfolio:</strong> <a href="https://shriyatallapragada.github.io/shriyatallapragada/">Visit my website ↗</a>
+</p>
+
 ---
 
 # 👩‍💻 About Me

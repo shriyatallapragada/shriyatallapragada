@@ -152,7 +152,7 @@ A DBMS team project. I designed the Oracle SQL schema, constraints and normalisa
 # 📈 GitHub Contributions
 
 <p align="center">
-<img src="assets/github-contributions.svg" alt="Shriya Tallapragada's GitHub contribution graph"/>
+<img src="assets/github-contributions.svg" alt="Shriya Tallapragada's GitHub contributions in the last year"/>
 </p>
 ---
 

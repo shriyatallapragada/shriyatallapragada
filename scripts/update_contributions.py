@@ -7,28 +7,34 @@ from datetime import date
 from html import escape
 from html.parser import HTMLParser
 from pathlib import Path
+import re
 from urllib.request import Request, urlopen
 
 
 USERNAME = "shriyatallapragada"
 OUTPUT = Path("assets/github-contributions.svg")
-COLORS = ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"]
 
 
 class ContributionParser(HTMLParser):
     def __init__(self) -> None:
         super().__init__()
-        self.days: list[tuple[str, int]] = []
+        self.total: str | None = None
+        self._in_total = False
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
-        if tag != "td":
-            return
         attributes = dict(attrs)
-        if "ContributionCalendar-day" not in attributes.get("class", ""):
-            return
-        day, level = attributes.get("data-date"), attributes.get("data-level")
-        if day and level and level.isdigit() and 0 <= int(level) <= 4:
-            self.days.append((day, int(level)))
+        if tag == "h2" and attributes.get("id") == "js-contribution-activity-description":
+            self._in_total = True
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "h2":
+            self._in_total = False
+
+    def handle_data(self, data: str) -> None:
+        if self._in_total and self.total is None:
+            match = re.search(r"\d[\d,]*", data.strip())
+            if match:
+                self.total = match.group().replace(",", "")
 
 
 def main() -> None:
@@ -41,45 +47,16 @@ def main() -> None:
 
     parser = ContributionParser()
     parser.feed(page)
-    if not parser.days:
-        raise RuntimeError("No contribution days found in GitHub's calendar response")
+    if parser.total is None:
+        raise RuntimeError("Could not read the yearly contribution total from GitHub's calendar response")
 
-    # The calendar endpoint returns a year of dates, laid out in Sunday-first columns.
-    entries = [(date.fromisoformat(day), level) for day, level in parser.days]
-    first_sunday = entries[0][0]
-    cell, gap, margin_x, margin_y = 11, 3, 44, 30
-    weeks = (len(entries) + 6) // 7
-    width = margin_x * 2 + weeks * (cell + gap) - gap
-    height = margin_y * 2 + 7 * (cell + gap) - gap
-
-    rects = []
-    for day, level in entries:
-        week = (day - first_sunday).days // 7
-        weekday = (day.weekday() + 1) % 7
-        x, y = margin_x + week * (cell + gap), margin_y + weekday * (cell + gap)
-        label = f"{level} contributions on {day.isoformat()}"
-        rects.append(
-            f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="2" '
-            f'fill="{COLORS[level]}"><title>{escape(label)}</title></rect>'
-        )
-
-    month_labels = []
-    previous_month = None
-    for day, _ in entries:
-        if day.month != previous_month and day.weekday() == 6:
-            week = (day - first_sunday).days // 7
-            month_labels.append(
-                f'<text x="{margin_x + week * (cell + gap)}" y="17">{day.strftime("%b")}</text>'
-            )
-            previous_month = day.month
-
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="300" height="88" viewBox="0 0 300 88" role="img" aria-labelledby="title desc">
 <title id="title">GitHub contributions for {USERNAME}</title>
-<desc id="desc">Daily contribution calendar for the past year, generated {date.today().isoformat()}.</desc>
-<style>text{{font:11px -apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;fill:#57606a}} .day{{font-size:10px}}</style>
-{''.join(month_labels)}
-<text class="day" x="5" y="{margin_y + 10}">Mon</text><text class="day" x="5" y="{margin_y + 4 * (cell + gap) + 10}">Wed</text><text class="day" x="5" y="{margin_y + 6 * (cell + gap) + 10}">Fri</text>
-{''.join(rects)}
+<desc id="desc">{escape(parser.total)} contributions in the last year, updated {date.today().isoformat()}.</desc>
+<rect x="1" y="1" width="298" height="86" rx="12" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="22" y="57" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="38" font-weight="700" fill="#1f2328">{escape(parser.total)}</text>
+<text x="92" y="40" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="14" font-weight="600" fill="#1f2328">GitHub contributions</text>
+<text x="92" y="61" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="12" fill="#656d76">in the last year</text>
 </svg>
 '''
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)

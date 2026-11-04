@@ -1,16 +1,34 @@
 #!/usr/bin/env python3
 """Generate a self-hosted GitHub contribution calendar SVG."""
 
+from __future__ import annotations
+
 from datetime import date
 from html import escape
+from html.parser import HTMLParser
 from pathlib import Path
-import re
 from urllib.request import Request, urlopen
 
 
 USERNAME = "shriyatallapragada"
 OUTPUT = Path("assets/github-contributions.svg")
 COLORS = ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"]
+
+
+class ContributionParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.days: list[tuple[str, int]] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag != "td":
+            return
+        attributes = dict(attrs)
+        if "ContributionCalendar-day" not in attributes.get("class", ""):
+            return
+        day, level = attributes.get("data-date"), attributes.get("data-level")
+        if day and level and level.isdigit() and 0 <= int(level) <= 4:
+            self.days.append((day, int(level)))
 
 
 def main() -> None:
@@ -21,15 +39,13 @@ def main() -> None:
     with urlopen(request, timeout=30) as response:
         page = response.read().decode("utf-8")
 
-    days = re.findall(
-        r'<td[^>]*class="ContributionCalendar-day"[^>]*data-date="(\d{4}-\d{2}-\d{2})"[^>]*data-level="([0-4])"',
-        page,
-    )
-    if not days:
+    parser = ContributionParser()
+    parser.feed(page)
+    if not parser.days:
         raise RuntimeError("No contribution days found in GitHub's calendar response")
 
     # The calendar endpoint returns a year of dates, laid out in Sunday-first columns.
-    entries = [(date.fromisoformat(day), int(level)) for day, level in days]
+    entries = [(date.fromisoformat(day), level) for day, level in parser.days]
     first_sunday = entries[0][0]
     cell, gap, margin_x, margin_y = 11, 3, 44, 30
     weeks = (len(entries) + 6) // 7

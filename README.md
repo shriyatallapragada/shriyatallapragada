@@ -186,7 +186,7 @@ Enterprise-style railway reservation platform supporting authentication, booking
 # 📈 GitHub Contributions
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=shriyatallapragada&hide=stars,commits,prs,issues,contribs&show_icons=false&theme=dark&hide_border=true" alt="GitHub Contributions" />
+  <img src="https://github-readme-stats.vercel.app/api?username=shriyatallapragada&hide=stars,commits,prs,issues&show_icons=false&theme=dark&hide_border=true" alt="Shriya's GitHub Contributions" />
 </p>
 ---
 

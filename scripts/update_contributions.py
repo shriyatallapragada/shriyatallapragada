@@ -61,12 +61,10 @@ def main() -> None:
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="320" height="100" viewBox="0 0 320 100" role="img" aria-labelledby="title desc">
 <title id="title">GitHub contributions for {USERNAME}</title>
 <desc id="desc">{total:,} public contributions across all years, updated {date.today().isoformat()}.</desc>
-<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3b5ccc"/><stop offset="55%" stop-color="#6951c8"/><stop offset="100%" stop-color="#a43e9b"/></linearGradient></defs>
-<rect x="1" y="1" width="318" height="98" rx="16" fill="url(#bg)"/>
-<circle cx="285" cy="18" r="42" fill="#ffffff" opacity="0.08"/><circle cx="310" cy="86" r="30" fill="#9ef0c2" opacity="0.18"/>
+<rect x="1" y="1" width="318" height="98" rx="16" fill="#3569a8"/>
 <text x="23" y="60" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="40" font-weight="750" fill="#ffffff">{total:,}</text>
 <text x="24" y="82" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="12" font-weight="600" letter-spacing="0.5" fill="#e6e6ff">PUBLIC CONTRIBUTIONS · ALL TIME</text>
-<text x="285" y="57" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="25" fill="#ffffff">✦</text>
+<text x="285" y="57" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="25" fill="#d8e8ff">✦</text>
 </svg>
 '''
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)

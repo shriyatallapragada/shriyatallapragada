@@ -33,118 +33,84 @@ I also serve as **Design Head at E-Cell, JNTUH**, leading visual identity and ca
 
 ---
 
-# 🚀 Featured Projects
+# 🚀 Projects
+
+Projects are listed in the same order and with the same summaries as my [portfolio](https://shriyatallapragada.github.io/shriyatallapragada/).
 
 ## 📰 Indian News Comparator
 
-AI-powered Chrome extension that analyses political bias in Indian news articles using a hybrid machine learning and LLM pipeline. The system combines **IndicBERT**, a custom **Liquid Neural Network**, semantic vector search, and **Groq LLMs** to provide bias scores, alternative perspectives, and cross-article comparisons.
+A Chrome extension that scores political bias in Indian news from −5 to +5 and explains why, helping readers see how different outlets cover the same event. The first version, **Media Bias Extension**, used LLM analysis and retrieval. In version 2, I trained an **IndicBERT + Liquid Neural Network** classifier and paired its scores with topic-filtered retrieval and Groq explanations. The model reached **65.4% accuracy across 3 classes**, against a 33% baseline, on 2,594 labelled articles.
 
-### My Contributions
+**What I built:** model training pipeline and bias classifier; FastAPI backend and API design; ChromaDB retrieval with topic-anchor filtering; Groq explanations; Docker deployment and most of the Chrome extension.
 
-- Designed and trained a custom bias-classification pipeline using **IndicBERT** and **Liquid Neural Networks**
-- Built the FastAPI backend and API architecture
-- Developed the complete machine learning training pipeline
-- Implemented ChromaDB semantic retrieval with topic-anchor filtering
-- Integrated Groq LLM for explainable bias analysis
-- Containerised and deployed the application using Docker
-- Contributed to the Chrome extension functionality while collaborating on the overall project
+**Tech:** `PyTorch` · `IndicBERT` · `FastAPI` · `ChromaDB` · `Groq` · `Docker`
 
-**Tech Stack**
+- [Version 2 repository](https://github.com/shriyatallapragada/indian-news-comparator)
+- [Version 1 repository](https://github.com/sai-ritvik/media-bias-extension)
 
-`Python`
-`FastAPI`
-`PyTorch`
-`Hugging Face`
-`IndicBERT`
-`Groq`
-`ChromaDB`
-`Docker`
-`Chrome Extension`
+## 🤖 NeuralPath · IISc Hackathon
 
----
+Reads a résumé against a job description and builds a personal learning roadmap, using a local LLM so candidate data stays on-device.
 
-## 🤖 NeuralPath
+**What I built:** FastAPI backend; PDF résumé parsing and skill-gap analysis; local Llama 3.2 through Ollama; adaptive learning-path algorithm; skill mapping to the O*NET taxonomy.
 
-AI-powered onboarding platform that analyses resumes against job descriptions and automatically generates personalised learning roadmaps using local LLMs.
+**Tech:** `FastAPI` · `LangChain` · `Ollama` · `Llama 3.2` · `O*NET` · `Next.js`
 
-### My Contributions
+[Repository](https://github.com/jahnavi-yenumula/AI--Onboarding-Engine-)
 
-- Developed the complete FastAPI backend
-- Designed the AI pipeline for resume parsing and skill-gap analysis
-- Integrated Llama 3.2 locally using Ollama
-- Built the adaptive learning-path generation algorithm
-- Implemented PDF parsing and O*NET skill standardisation
-- Collaborated with teammates during overall system integration while the frontend was developed separately
+## 📰 Media Bias Extension · First prototype
 
-**Tech Stack**
+The first prototype for Indian News Comparator. It used Groq to analyze article bias instead of the later ML pipeline, then used ChromaDB and news API fallbacks to find coverage from other perspectives.
 
-`Python`
-`FastAPI`
-`LangChain`
-`Ollama`
-`Next.js`
+**Tech:** `Chrome extension` · `FastAPI` · `Groq` · `ChromaDB`
 
----
+[Repository](https://github.com/sai-ritvik/media-bias-extension)
 
-## 📰 Media Bias Extension
+## 🧠 SprintMind · Microsoft HackwithHyderabad 3.0
 
-Chrome extension that compares the same news event across multiple political perspectives using semantic search and LLM reasoning.
+A team-led engineering delivery agent that connects team commitments, GitHub activity, and delivery risks with Hindsight memory. Each risk is backed by traceable evidence and a recommended next step.
 
-### My Contributions
+**Tech:** `Python` · `FastAPI` · `Hindsight` · `GitHub webhooks` · `Team lead`
 
-- Designed the backend architecture
-- Implemented the Groq-powered political bias detection pipeline
-- Built the ChromaDB semantic retrieval workflow
-- Integrated NewsAPI and Guardian API fallback mechanisms
-- Developed the article comparison workflow
-- Collaborated on the Chrome extension implementation
+[Repository](https://github.com/shriyatallapragada/sprintmind)
 
-**Tech Stack**
+## 🏫 Campus Loop
 
-`Python`
-`FastAPI`
-`Flask`
-`Groq`
-`ChromaDB`
-`Chrome Extension`
+A Reddit-style campus platform for students to post, discuss and share in one place.
 
----
+[Repository](https://github.com/shriyatallapragada/AI-powered-Campus_Management_System)
+
+## 🔗 ContextBridge
+
+Switching between AI tools means losing your context. ContextBridge carries it from one AI to the next.
+
+**Tech:** `Python` · `CLI` · `AI tooling`
+
+[Repository](https://github.com/shriyatallapragada/ContextBridge)
+
+## 📝 NotionMake
+
+A simple page generator for people who want Notion's benefits without learning how it works.
+
+**Tech:** `Flutter` · `Dart` · `Notion API`
+
+[Repository](https://github.com/shriyatallapragada/NotionMake)
 
 ## 📈 Linear Regression From Scratch
 
-An object-oriented implementation of Linear Regression built entirely from mathematical foundations without relying on machine learning frameworks.
+Linear regression written from the maths up (variance, covariance, MSE) with no ML framework.
 
-### My Contributions
+**Tech:** `Python` · `Matplotlib`
 
-- Implemented variance and covariance calculations from scratch
-- Designed the LinearRegression class using object-oriented programming
-- Implemented prediction and Mean Squared Error evaluation
-- Visualised predictions using Matplotlib
-
-**Tech Stack**
-
-`Python`
-`Matplotlib`
-
----
+[Repository](https://github.com/shriyatallapragada/linear-regression-from-scratch)
 
 ## 🚆 Railway Reservation System
 
-Enterprise-style railway reservation platform supporting authentication, bookings, payments, seat allocation, and waitlist management.
+A DBMS team project. I designed the Oracle SQL schema, constraints and normalisation.
 
-### My Contributions
+**Tech:** `Oracle SQL`
 
-- Designed and implemented the Oracle SQL database schema
-- Created relational tables, constraints, and database relationships
-- Worked on database normalization
-- Assisted with backend database integration
-
-**Tech Stack**
-
-`Oracle SQL`
-`React`
-`Node.js`
-`Express`
+[Repository](https://github.com/jahnavi-yenumula/railway-reservation-system)
 
 ---
 
@@ -186,9 +152,7 @@ Enterprise-style railway reservation platform supporting authentication, booking
 # 📈 GitHub Contributions
 
 <p align="center">
-  <a href="https://github.com/shriyatallapragada?tab=contributions">
-    <img src="https://img.shields.io/badge/View-%F0%9F%93%88%20GitHub%20Contributions-1f2328?style=for-the-badge&logo=github&logoColor=white" alt="View GitHub Contributions" />
-  </a>
+<img src="assets/github-contributions.svg" alt="Shriya Tallapragada's GitHub contribution graph"/>
 </p>
 ---
 

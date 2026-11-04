@@ -78,6 +78,8 @@ A team delivery intelligence tool that brings meeting and standup commitments to
 
 A campus hub for academic resources, viva preparation, placement stories and opportunities, anonymous student Q&A, events, and searchable campus knowledge.
 
+**Tech:** `Next.js 16` · `TypeScript` · `Tailwind CSS` · `PostgreSQL` · `Prisma` · `NextAuth.js`
+
 [Repository](https://github.com/shriyatallapragada/AI-powered-Campus_Management_System)
 
 ## 🔗 ContextBridge

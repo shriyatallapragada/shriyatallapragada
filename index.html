@@ -133,8 +133,8 @@
     </div>
     <div class="card-body">
       <h3>Indian News Comparator</h3>
-      <p>A Chrome extension that scores political bias in Indian news from −5 to +5 and explains why. News in India often frames the same event very differently depending on the outlet, and readers rarely see the other side. I built this for my second-year real-time research project to score how biased an article is and show the same story from other perspectives.</p>
-      <p>Version 1, Media Bias Extension, combined LLM analysis with retrieval to compare coverage. For version 2, I trained an IndicBERT and Liquid Neural Network classifier, then paired its scores with topic-filtered retrieval and Groq explanations.</p>
+      <p>A Chrome extension that extracts a news article, scores its political leaning on a −5 to +5 scale, and compares it with related Left, Center, and Right coverage.</p>
+      <p>Version 1 combined LLM analysis with article retrieval. Version 2 uses an IndicBERT and Liquid Neural Network classifier, topic-filtered ChromaDB search, and Groq to explain differences in framing.</p>
       <p class="highlight">65.4% accuracy on 3 classes (33% baseline), trained on 2,594 labelled articles.</p>
       <details><summary>What I built</summary><ul>
         <li>The model training pipeline and bias classifier</li>
@@ -163,7 +163,7 @@
       </div>
       <div class="card-body">
         <h3>NeuralPath <span class="badge">IISc Hackathon</span></h3>
-        <p>Reads a résumé against a job description and builds a personal learning roadmap, with a local LLM so candidate data stays on-device.</p>
+        <p>Compares a résumé with a job description, identifies skill gaps, and builds a personalised day-by-day learning path with Llama 3.2 running locally through Ollama.</p>
         <details><summary>What I built</summary><ul>
           <li>The FastAPI backend</li>
           <li>PDF résumé parsing and skill-gap analysis</li>
@@ -187,7 +187,7 @@
       <div class="card-body">
         <p class="eyebrow">First prototype</p>
         <h3>Media Bias Extension</h3>
-        <p>The first prototype for Indian News Comparator. It used Groq to analyze article bias instead of the later ML pipeline, then used ChromaDB and news API fallbacks to find coverage from other perspectives.</p>
+        <p>The first version of Indian News Comparator. Groq classifies article bias and extracts entities; ChromaDB finds related coverage first, with NewsAPI and The Guardian as live fallbacks for Left, Center, and Right perspectives.</p>
         <ul class="tags"><li>Chrome extension</li><li>FastAPI</li><li>Groq</li><li>ChromaDB</li></ul>
         <a class="link" href="https://github.com/sai-ritvik/media-bias-extension" rel="noopener">View repository →</a>
       </div>
@@ -203,7 +203,7 @@
       </div>
       <div class="card-body">
         <h3>SprintMind <span class="badge">Microsoft HackwithHyderabad 3.0</span></h3>
-        <p>A team-led engineering delivery agent that connects team commitments, GitHub activity, and delivery risks with Hindsight memory. Each risk is backed by traceable evidence and a recommended next step.</p>
+        <p>A team delivery intelligence tool that brings meeting and standup commitments together with Jira updates and GitHub pull request and CI events. Deterministic rules flag delivery risks with traceable evidence; Hindsight keeps dated team memory, and the LLM explains verified evidence.</p>
         <ul class="tags"><li>Python</li><li>FastAPI</li><li>Hindsight</li><li>GitHub webhooks</li><li>Team lead</li></ul>
         <a class="link" href="https://github.com/shriyatallapragada/sprintmind" rel="noopener">View repository →</a>
       </div>
@@ -329,8 +329,8 @@
       </div>
       <div class="card-body">
         <h3>Campus Loop</h3>
-        <p>A Reddit-style campus platform for students to post, discuss and share in one place.</p>
-        <ul class="tags"><li>Campus platform</li></ul>
+        <p>A campus hub for academic resources, viva preparation, placement stories and opportunities, anonymous student Q&amp;A, events, and searchable campus knowledge.</p>
+        <ul class="tags"><li>Next.js</li><li>PostgreSQL</li><li>Campus platform</li></ul>
         <a class="link" href="https://github.com/shriyatallapragada/AI-powered-Campus_Management_System" rel="noopener">Repository →</a>
       </div>
     </article>
@@ -345,7 +345,7 @@
       </div>
       <div class="card-body">
         <h3>ContextBridge</h3>
-        <p>Switching between AI tools means losing your context. ContextBridge carries it from one AI to the next.</p>
+        <p>A local-first CLI and desktop app that records project decisions, commits, code changes, and test runs, then creates a concise handoff for the next AI coding agent. It works offline without an LLM.</p>
         <ul class="tags"><li>Python</li><li>CLI</li><li>AI tooling</li></ul>
         <a class="link" href="https://github.com/shriyatallapragada/ContextBridge" rel="noopener">Repository →</a>
       </div>
@@ -359,7 +359,7 @@
       </div>
       <div class="card-body">
         <h3>NotionMake</h3>
-        <p>A simple page generator for people who want Notion's benefits without learning how it works.</p>
+        <p>A desktop app for visually building Notion pages and databases from templates or blocks, previewing them, and publishing to a workspace. Its optional AI assistant generates pages locally on your device.</p>
         <ul class="tags"><li>Flutter</li><li>Dart</li><li>Notion API</li></ul>
         <a class="link" href="https://github.com/shriyatallapragada/NotionMake" rel="noopener">Repository →</a>
       </div>
@@ -376,7 +376,7 @@
       </div>
       <div class="card-body">
         <h3>Linear Regression From Scratch</h3>
-        <p>Linear regression written from the maths up (variance, covariance, MSE) with no ML framework.</p>
+        <p>A Python linear-regression model built from scratch to predict startup revenue from marketing spend, calculate MSE, and plot its predictions without an ML framework.</p>
         <ul class="tags"><li>Python</li><li>Matplotlib</li></ul>
         <a class="link" href="https://github.com/shriyatallapragada/linear-regression-from-scratch" rel="noopener">Repository →</a>
       </div>
@@ -391,7 +391,7 @@
       </div>
       <div class="card-body">
         <h3>Railway Reservation System</h3>
-        <p>A DBMS team project. I designed the Oracle SQL schema, constraints and normalisation.</p>
+        <p>A full-stack train-booking app with route search, multi-passenger reservations, payments, automatic seat allocation, and waitlist promotion after cancellations. I designed the Oracle SQL schema, constraints, and normalization.</p>
         <ul class="tags"><li>Oracle SQL</li></ul>
         <a class="link" href="https://github.com/jahnavi-yenumula/railway-reservation-system" rel="noopener">Repository →</a>
       </div>

@@ -39,7 +39,7 @@ Projects are listed in the same order and with the same summaries as my [portfol
 
 ## 📰 Indian News Comparator
 
-A Chrome extension that scores political bias in Indian news from −5 to +5 and explains why, helping readers see how different outlets cover the same event. The first version, **Media Bias Extension**, used LLM analysis and retrieval. In version 2, I trained an **IndicBERT + Liquid Neural Network** classifier and paired its scores with topic-filtered retrieval and Groq explanations. The model reached **65.4% accuracy across 3 classes**, against a 33% baseline, on 2,594 labelled articles.
+A Chrome extension that extracts a news article, scores its political leaning on a −5 to +5 scale, and compares it with related Left, Center, and Right coverage. The first version combined LLM analysis with article retrieval. Version 2 uses an **IndicBERT + Liquid Neural Network** classifier, topic-filtered ChromaDB search, and Groq to explain differences in framing. The model reached **65.4% accuracy across 3 classes**, against a 33% baseline, on 2,594 labelled articles.
 
 **What I built:** model training pipeline and bias classifier; FastAPI backend and API design; ChromaDB retrieval with topic-anchor filtering; Groq explanations; Docker deployment and most of the Chrome extension.
 
@@ -50,7 +50,7 @@ A Chrome extension that scores political bias in Indian news from −5 to +5 and
 
 ## 🤖 NeuralPath · IISc Hackathon
 
-Reads a résumé against a job description and builds a personal learning roadmap, using a local LLM so candidate data stays on-device.
+Compares a résumé with a job description, identifies skill gaps, and builds a personalised day-by-day learning path with Llama 3.2 running locally through Ollama.
 
 **What I built:** FastAPI backend; PDF résumé parsing and skill-gap analysis; local Llama 3.2 through Ollama; adaptive learning-path algorithm; skill mapping to the O*NET taxonomy.
 
@@ -60,7 +60,7 @@ Reads a résumé against a job description and builds a personal learning roadma
 
 ## 📰 Media Bias Extension · First prototype
 
-The first prototype for Indian News Comparator. It used Groq to analyze article bias instead of the later ML pipeline, then used ChromaDB and news API fallbacks to find coverage from other perspectives.
+The first version of Indian News Comparator. Groq classifies article bias and extracts entities; ChromaDB finds related coverage first, with NewsAPI and The Guardian as live fallbacks for Left, Center, and Right perspectives.
 
 **Tech:** `Chrome extension` · `FastAPI` · `Groq` · `ChromaDB`
 
@@ -68,7 +68,7 @@ The first prototype for Indian News Comparator. It used Groq to analyze article 
 
 ## 🧠 SprintMind · Microsoft HackwithHyderabad 3.0
 
-A team-led engineering delivery agent that connects team commitments, GitHub activity, and delivery risks with Hindsight memory. Each risk is backed by traceable evidence and a recommended next step.
+A team delivery intelligence tool that brings meeting and standup commitments together with Jira updates and GitHub pull request and CI events. Deterministic rules flag delivery risks with traceable evidence; Hindsight keeps dated team memory, and the LLM explains verified evidence.
 
 **Tech:** `Python` · `FastAPI` · `Hindsight` · `GitHub webhooks` · `Team lead`
 
@@ -76,13 +76,13 @@ A team-led engineering delivery agent that connects team commitments, GitHub act
 
 ## 🏫 Campus Loop
 
-A Reddit-style campus platform for students to post, discuss and share in one place.
+A campus hub for academic resources, viva preparation, placement stories and opportunities, anonymous student Q&A, events, and searchable campus knowledge.
 
 [Repository](https://github.com/shriyatallapragada/AI-powered-Campus_Management_System)
 
 ## 🔗 ContextBridge
 
-Switching between AI tools means losing your context. ContextBridge carries it from one AI to the next.
+A local-first CLI and desktop app that records project decisions, commits, code changes, and test runs, then creates a concise handoff for the next AI coding agent. It works offline without an LLM.
 
 **Tech:** `Python` · `CLI` · `AI tooling`
 
@@ -90,7 +90,7 @@ Switching between AI tools means losing your context. ContextBridge carries it f
 
 ## 📝 NotionMake
 
-A simple page generator for people who want Notion's benefits without learning how it works.
+A desktop app for visually building Notion pages and databases from templates or blocks, previewing them, and publishing to a workspace. Its optional AI assistant generates pages locally on your device.
 
 **Tech:** `Flutter` · `Dart` · `Notion API`
 
@@ -98,7 +98,7 @@ A simple page generator for people who want Notion's benefits without learning h
 
 ## 📈 Linear Regression From Scratch
 
-Linear regression written from the maths up (variance, covariance, MSE) with no ML framework.
+A Python linear-regression model built from scratch to predict startup revenue from marketing spend, calculate MSE, and plot its predictions without an ML framework.
 
 **Tech:** `Python` · `Matplotlib`
 
@@ -106,7 +106,7 @@ Linear regression written from the maths up (variance, covariance, MSE) with no 
 
 ## 🚆 Railway Reservation System
 
-A DBMS team project. I designed the Oracle SQL schema, constraints and normalisation.
+A full-stack train-booking app with route search, multi-passenger reservations, payments, automatic seat allocation, and waitlist promotion after cancellations. I designed the Oracle SQL schema, constraints, and normalisation.
 
 **Tech:** `Oracle SQL`
 
